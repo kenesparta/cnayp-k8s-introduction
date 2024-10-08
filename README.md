@@ -1,2 +1,2 @@
-# cn-ayp-k8s-intro
-Introduction to K8s, Cloud Native Ayacucho
+# Cloud Native Ayacucho - Introduction to K8s
+Introduction to K8s
