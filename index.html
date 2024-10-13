@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			pre.mermaid {
+				font-family: 'trebuchet ms', verdana, arial;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" id="slides-container"></div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="js/init.js"></script>
+		<script type="module">
+			import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+			mermaid.initialize(
+					{
+						startOnLoad: true,
+						controlScale: 25,
+						themeVariables: {
+							// primaryColor: '#ff0000',
+							// primaryTextColor: '#ffffff',
+							// primaryBorderColor: '#000000',
+							// lineColor: '#F8B229',
+							// secondaryColor: '#006100',
+							// tertiaryColor: '#fff'
+						}
+					}
+			);
+		</script>
+	</body>
+</html>
