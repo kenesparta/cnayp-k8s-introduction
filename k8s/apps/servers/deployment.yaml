@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: servers-main
+  name: servers-main
+spec:
+  replicas: 15
+  selector:
+    matchLabels:
+      app: servers-main
+  template:
+    metadata:
+      labels:
+        app: servers-main
+    spec:
+      containers:
+        - image: nginx:1.27
+          name: nginx-main
+          ports:
+            - containerPort: 80
+
+        - image: tomcat:9.0
+          name: tomcat
+          ports:
+            - containerPort: 8080
