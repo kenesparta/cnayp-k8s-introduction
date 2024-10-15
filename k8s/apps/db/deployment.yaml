@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: db-main
+  name: db-main
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: db-main
+  template:
+    metadata:
+      labels:
+        app: db-main
+    spec:
+      containers:
+        - image: redis:7.4-alpine
+          name: redis-main
+          ports:
+            - containerPort: 6379
