@@ -1,5 +1,6 @@
 async function loadSlides() {
   const slideFiles = [
+    "slides/intro/00-intro.html",
     "slides/intro/01-title.html",
     "slides/intro/02-history.html",
     "slides/intro/03-general.html",
